@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    style="overflow:hidden"
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=auto height=auto tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -58,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/V17.loader.js";
+      var loaderUrl = buildUrl + "/V21.loader.js";
       var config = {
-        dataUrl: buildUrl + "/V17.data",
-        frameworkUrl: buildUrl + "/V17.framework.js",
-        codeUrl: buildUrl + "/V17.wasm",
+        dataUrl: buildUrl + "/V21.data",
+        frameworkUrl: buildUrl + "/V21.framework.js",
+        codeUrl: buildUrl + "/V21.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Abomis",
@@ -95,8 +94,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "100%";
-        canvas.style.height = "100%";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
 
       loadingBar.style.display = "block";
